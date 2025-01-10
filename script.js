@@ -1,3 +1,4 @@
+
 // Select Elements
 const postOptions = document.querySelector('.post-options');
 const postOptionsModal = document.getElementById('post-options-modal');
@@ -132,3 +133,5 @@ postButton.addEventListener('click', () => {
     alert('Please select a file and write a caption!');
   }
 });
+
+
