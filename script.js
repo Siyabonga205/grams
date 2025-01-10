@@ -47,11 +47,39 @@ postButton.addEventListener('click', () => {
       post.className = 'post';
       post.innerHTML = `
         <div class="post-header">
-          <span class="post-user">You</span>
-          <i class="fas fa-ellipsis-h post-options-user"></i>
+      <div class="profile">
+        <img src="https://via.placeholder.com/40" alt="User Profile Image"> <!-- Placeholder profile image -->
+        <span class="username">Siyabonga Mbatha</span>
+      </div>
+      <i class="fas fa-ellipsis-h post-options-user"></i>
+    </div>
+
+    <!-- Post Image -->
+    <img src="${event.target.result}" alt="Post Image" class="post-image">
+
+    <!-- Post Footer -->
+    <div class="post-footer">
+      <!-- Footer Icons -->
+      <div class="icons">
+        <div class="left">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-comment"></i>
+          <i class="fas fa-paper-plane"></i>
         </div>
-        <img src="${event.target.result}" alt="Post Image" class="post-image">
-        <p class="post-content">${caption}</p>
+        <i class="fas fa-bookmark"></i>
+      </div>
+
+      <!-- Likes Count -->
+      <p class="likes">0 likes</p>
+
+      <!-- Caption -->
+      <p class="caption">
+        <strong>Siyabonga Mbatha</strong> ${caption}
+      </p>
+
+      <!-- Timestamp -->
+      <p class="time">Just now</p>
+    </div>
         <div class="modal hidden user-options-modal">
           <ul class="modal-options">
             <li class="modal-item">Report</li>
